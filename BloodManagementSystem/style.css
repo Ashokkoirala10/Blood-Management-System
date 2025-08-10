@@ -1,0 +1,408 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #070603;
+}
+/* Custom mobile menu positioning */
+@media (max-width: 991.98px) {
+    .custom-collapse {
+        position: absolute;
+        top: 60px; /* adjust based on navbar height */
+        right: 15px;
+        background-color: rgba(138, 3, 2, 0.3); /* Dark red with slight transparency */
+        padding: 10px 15px;
+        border-radius: 8px;
+        z-index: 999;
+        width: auto;
+        min-width: 180px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(4px); /* Optional: adds a nice blur effect behind it */
+    }
+
+    .custom-collapse .nav-link {
+        color: #FCFCFC;
+        padding: 8px 0;
+    }
+
+    .custom-collapse .nav-link:hover {
+        color: #B79455;
+    }
+}
+/* Apply to desktop view only */
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        margin: 0 15px; /* Increase spacing */
+        font-weight: 600; /* Semi-bold */
+        font-size: 1.05rem;
+        letter-spacing: 0.4px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #B79455 !important;
+    }
+}
+.navbar {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.navbar-brand {
+    font-weight: 700; /* Bold */
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: #8A0302;  /* Dark red background */
+    padding: 100px 0;
+    color: #FCFCFC;  /* White text for contrast */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.hero .btn {
+    background-color: #FCFCFC;
+    color: #070603;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.hero .btn:hover {
+    background-color: #B79455;
+    color: white;
+}
+
+/* Features Section */
+.features .feature-box {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.features .feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.features i {
+    color: #A41214;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #8A0302;
+}
+
+.cta .btn {
+    background-color: #FCFCFC;
+    color: #070603;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.cta .btn:hover {
+    background-color: #B79455;
+    color: white;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #FCFCFC;  /* Light background */
+}
+
+.testimonials .testimonial-box {
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Add transition for hover */
+}
+
+.testimonials i {
+    color: #A41214;
+    font-size: 2.5rem;
+}
+
+.testimonials .testimonial-box p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #070603;
+}
+
+.testimonials .testimonial-box:hover {
+    transform: translateY(-5px);  /* Slightly lift the box on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Increase shadow on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #070603;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #B79455;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* About Page: Hero Section */
+.hero-about {
+    background-color: #8A0302;
+    color: #FCFCFC;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* About: Section Headings */
+.about-section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #070603;
+}
+
+/* About: Team Section */
+.our-team .team-member {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.our-team .team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.our-team .team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #A41214;
+    margin-bottom: 15px;
+}
+
+
+
+.our-team .team-member p {
+    color: #070603;
+    font-size: 0.95rem;
+}
+
+/* About: Testimonials (already partly covered) */
+.testimonials .testimonial-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+
+
+
+/* Register Page Hero Section */
+.hero-register {
+    background-color: #8A0302;
+    color: #FCFCFC;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-register h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-register p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+/* for login */
+
+/* Login Wrapper */
+.login-wrapper {
+    background-color: #f8f9fa;
+    min-height: 60vh;
+}
+
+/* Login Card */
+.login-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Button Styling */
+.custom-btn {
+    color: #fff;
+    border: none;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none; /* in case used on <a> */
+    display: inline-block;
+}
+
+.custom-btn:hover {
+    color: #B79455;
+    text-decoration: none;
+}
+
+/* Responsive tweaks for stacked buttons */
+@media (max-width: 576px) {
+    .custom-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .custom-btn:hover {
+    color: #B79455;
+
+}
+}
+
+/* Reusable Custom Button */
+.custom-btn {
+    background-color: #a41214;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    color: #B79455;
+
+}
+
+
+/*Donor Form*/
+/* Outline variant for back button */
+.custom-btn-outline {
+    background-color: transparent;
+    border: 2px solid #a41214;
+    color: #a41214;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.custom-btn-outline:hover {
+    background-color: #B79455;
+    color: #000;
+    border-color: #B79455;
+    text-decoration: none;
+}
+
+/* Seeker page */
+.feature-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* for donor list in seeker dash */
+
+/* Donor card red border */
+/* Custom border and style for donor cards */
+.custom-donor-card {
+    border: 2px solid #a41214 !important;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Optional hover effect */
+.custom-donor-card:hover {
+    box-shadow: 0 8px 20px rgba(164, 18, 20, 0.15);
+}
+
+/* Make links look like normal text */
+.custom-text-link {
+    color: #212529; /* Normal dark text */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect for text links */
+.custom-text-link:hover {
+    color: #B79455;
+
+}
+
+/* UPdate seekers */
+.update-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 2.5rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 5px solid #a41214;
+}
+
+.update-card h3 {
+    color: #a41214;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.login-wrapper {
+    background: url('images/image.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh; /* Full viewport height */
+    position: relative;
+    z-index: 0;
+}
+
+.login-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.login-card {
+    z-index: 2;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
